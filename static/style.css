@@ -1,0 +1,238 @@
+/* 
+File name: style.css
+Author: Amin Nekouei-041139676
+Course: CST8285_S24
+Assignment: assignment1
+Date: 9-8-2024
+Professor: Prof Alem Legesse.
+purpose:portfolio website
+*/
+/* Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+}
+
+/* index.html css*/
+
+/* Wrapper */
+#wrapper {
+	/* index.html hedder back ground */
+	background-image: url(bg.gif);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+/* making the white circle with porfile image and contact buttons in index.html */
+#mainindex {
+	position: relative;
+	max-width: 100%;
+	min-width: 27em;
+	padding: 4.5em 3em 3em 3em;
+	background: #ffffff;
+	border-radius: 1000px;
+	opacity: 0.95;
+	text-align: center;
+
+}
+
+#mainindex .avatar {
+	position: relative;
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+#mainindex .avatar img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 100%;
+
+}
+
+/*end of making the white circle with porfile image and contact buttons in index.html */
+
+#developerspan,
+#collegelink,
+#programmingspan,
+#photographyspan {
+	font-weight: bold;
+}
+
+#field1,
+.legends {
+	all: revert;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+#prbg {
+	margin-left: 60px;
+	padding-right: 0px;
+	margin-right: 20px;
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+
+/* buttons in projects.html */
+#nextbtn,
+#pribtn {
+	line-height: 10px;
+}
+
+/* project info section in projects.html */
+#card {
+	max-width: 95%;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* aditional styles for work expirence part in resume.html */
+#workdatedd {
+	font-size: small;
+}
+
+#companynamedd {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* contace.html background and font color */
+#contactbody {
+	background-image:url(contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+/* textarea part in contact form */
+#message {
+	height: 12rem;
+}
+
+/* contact header and fotter back ground folder */
+#contacteheader,
+#contactfooter {
+	background-color: black;
+	color: white
+}
+
+/* contanct form font color */
+#contactForm {
+	color: #000;
+}
+
+/* make web site rsponsive for smaller screens */
+@media screen and (max-width: 480px) {
+
+	/* Adjust main section in index.html size for smaller screens */
+	#main {
+		min-width: 0;
+		padding: 4em 2em 2.5em 2em;
+		border-radius: 0;
+	}
+
+	/* Adjust avatar size for smaller screens */
+	#main .avatar img {
+		width: 100px;
+
+	}
+
+	/* Adjust project section in projescts.html for smaller screens */
+	#projects {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+}
